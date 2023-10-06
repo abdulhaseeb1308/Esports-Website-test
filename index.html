@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+    
+  
+    <link rel="shortcut icon" href="icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>eSports</title>
+       <style> 
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border: 2px solid red;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+input[type=text]:focus {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border: 2px solid blue;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border: 2px solid red;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+input[type=password]:focus {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border: 2px solid blue;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+    input[type=submit]{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+input[type=submit]:hover{
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+      
+        .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
+</style>
+
+
+
+</head>
+
+<body>
+ <div class="header">
+        <p align="center"><img src="banner.gif"></p>
+  
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="aboutus.html">About Us</a>
+    <a href="feedback.html">Feedback</a>
+    
+    <div style="float: right">
+        <a href="signup.php">Register</a>
+  
+
+  <a onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Login</a>
+
+  <div id="id01" class="w3-modal w3-animate-opacity">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-red"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-large w3-display-topright">&times;</span>
+        <h2>Login</h2>
+      </header>
+      <div class="w3-container">
+        <form action="validation.php" method="post">
+  <label for="name"><strong>Username</strong></label>
+      <input type="text" id="user" name="user" placeholder="Enter your username" required>
+            <label for="name"><strong>Password</strong></label>
+      <input type="password" id="pw" name="pw" placeholder="Enter your password" required>
+<input type="submit" value="Submit">  
+</form>
+      </div>
+   
+    </div>
+  </div>
+</div>
+  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <h2>Definition of eSports</h2>
+      Esports (also known as electronic sports, e-sports, eSports, or competitive/professional [video] gaming) is a form of competition using video games.Most commonly, esports takes the form of organized, multiplayer video game competitions, particularly between professional players. Although organized online and offline competitions have long been a part of video game culture, these were largely between amateurs until the late 2000s, when participation by professional gamers and spectatorship in these events through live streaming saw a large surge in popularity. By the 2010s,esports was a significant factor in the video game industry, with many game developers actively designing toward a professional esports subculture.
+      </div>
+      <div class="card">
+      <h2>ESL Pro League Final</h2>
+      <h5>Cloud9 vs. Fnatic</h5>
+          <video style="width: 100%; height: auto; border-radius: 10px" src="Match.mp4" controls ></video>
+          
+      
+    </div>
+    <div class="card">
+      <h2>IEM Katowice</h2>
+      <h5>March 2–6, 2016</h5>
+        <img style="width: 100%; height: auto; border-radius: 10px" src="img.jpg">
+     
+    </div>
+      
+  </div>
+  <div class="rightcolumn">
+   
+    <div class="card">
+      <h3>Sub-Directories</h3>
+     <div class="link"><a href="about.html">About eSports</a></div><br>
+        <div class="link"><a href="his.html">History</a></div><br>
+        <div class="link"><a href="names.html">Popular Names</a></div><br>
+        <div class="link"><a href="leagues.html">Professional Leagues</a></div><br>
+        <div class="link"><a href="gen.html">Next Generation</a></div><br>
+    </div>
+      <div class="card">
+          <h3>Headlines</h3>
+<script type="text/javascript"> 
+
+rssfeed_url = new Array(); 
+rssfeed_url[0]="https://www.gameinformer.com/news.xml";  
+rssfeed_frame_width="100%"; 
+rssfeed_frame_height="200"; 
+rssfeed_scroll="on"; 
+rssfeed_scroll_step="4"; 
+rssfeed_font_face="Arial";
+rssfeed_target="_blank"; 
+rssfeed_font_size="12";  
+rssfeed_item_title_color="white"; 
+rssfeed_item_bgcolor="black"; 
+rssfeed_no_items="0"; 
+rssfeed_cache = "c410db8de9606df231f0c9cc9910a6fd"; 
+</script> 
+<script type="text/javascript" src="feed.js"></script> 
+
+
+  </div>
+        <div class="card">
+      <h3>Popular Games</h3>
+     <div class="link"><a href="http://blog.counter-strike.net/">CS:GO</a></div><br>
+        <div class="link"><a href="http://blog.dota2.com/">Dota 2</a></div><br>
+        <div class="link"><a href="https://play.na.leagueoflegends.com/en_US">LoL</a></div><br>
+        <div class="link"><a href="https://www.epicgames.com/fortnite/l">Fortnite</a></div><br> 
+             <div class="link"><a href="https://starcraft2.com/en-us/">StarCraft II</a></div><br>
+            
+    </div>
+</div>
+    </div> 
+
+<div class="footer">
+ This website was made as a project to test the skills of the developer.
+</div>
+    <script>
+function myFunction() {
+    alert("I am an alert box!");
+}
+</script>
+
+</body>
+    
+</html>
